@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+
+<body>
+    <h1>User Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>
+                <h2>Personal Details</h2>
+            </legend>
+            <input type="text" name="fname" placeholder="First Name">
+            <input type="text" name="lname" placeholder="Last Name">
+            <br><br>
+            <label for="date">DOB: </label>
+            <input type="date" name="dob">
+            <input type="number" name="phone" placeholder="Phonenumber">
+            <br><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" value="male">male</input>
+            <input type="radio" name="gender" value="female">female</input>
+            <br><br>
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <br><br>
+            <input type="password" name="pass" placeholder="Password">
+            <input type="password" name="cpass" placeholder="Confirm Password">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Account Preferences</h2>
+            </legend>
+            <label for="type">Account Type:</label>
+            <input type="radio" name="type">Personal</input>
+            <input type="radio" name="type">Regular</input>
+            <br><br>
+            <select name="plan">
+                <option value="">Choose Plan</option>
+                <optgroup label="Basic">
+                    <option value="100">$100 per year</option>
+                    <option value="200">$250 per year</option>
+                </optgroup>
+                <optgroup label="Premium">
+                    <option value="300">$300 per year</option>
+                    <option value="500">$500 per year</option>
+                </optgroup>
+                <optgroup label="Elite">
+                    <option value="1000">$1000 per year</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="color">Color Theme</label>
+            <input type="color" name="color">
+            <br><br>
+            <label for="mode">Work Mode: </label>
+            <input type="radio" name="mode">flexible</input>
+            <input type="radio" name="mode">full time</input>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Feedback</h2>
+            </legend>
+            <textarea name="feedback" placeholder="Give your feedback here...." cols="43" rows="3"></textarea>
+            <br>
+            <br>
+            <input type="range" name="rate" min="1" max="5">
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>

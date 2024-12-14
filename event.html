@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+        <h1>Event Registration</h1>
+        <form>
+            <fieldset>
+                <legend><h2>Personal Information</h2></legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            <br><br>
+
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name="college" placeholder="Enter your college name">
+            <br><br>
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year">
+                <option value="">Select Year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+            <br><br>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Accommodation Information</h2></legend>
+            <label for="accommodation">Are you a:</label>
+            <input type="radio" name="accommodation" value="day-scholar"> Day Scholar</input>
+            <input type="radio" name="accommodation" value="hosteller"> Hosteller</input>
+            <br><br>
+            <label for="hostel">Hostel Name:</label>
+            <input type="text" id="hostel" name="hostel" placeholder="Enter your hostel name">
+            <br><br>
+            <label for="room">Room Number:</label>
+            <input type="text" id="room" name="room" placeholder="Enter your room number">
+            <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Event Preferences</h2></legend>
+            <label for="events">Select Events to Participate:</label>
+            <select name="events">
+                <option value="">select</option>
+                <option value="coding">Coding Contest</option>
+                <option value="quiz">Quiz Competition</option>
+                <option value="dance">Dance Battle</option>
+                <option value="singing">Singing Competition</option>
+                <option value="sports">Sports Events</option>
+            </select>
+            <br><br>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Additional Information</h2></legend>
+            <label for="comments">Any Special Requests/Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Let us know if you have any special requests..."></textarea>
+            <br><br>
+            </fieldset>
+            <br>
+            <button type="submit">Register</button><span>   </span><button type="reset">Reset</button>
+        </form>
+</body>
+</html>
